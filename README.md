@@ -6,7 +6,7 @@ This won't work properly:
 
 ```
 body {
-      background: url(https://www.w3schools.com/css/trolltunga.jpg) no-repeat center center fixed;
+      background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -25,7 +25,7 @@ body:after{
       left:0;
       right:0;
       z-index:-1; /* needed to keep in the background */
-      background: url(https://www.w3schools.com/css/trolltunga.jpg) center center;
+      background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
