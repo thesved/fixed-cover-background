@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+body:after{
+  content:"";
+  position:fixed; /* stretch a fixed position to the whole screen */
+  top:0;
+  height:100vh; /* fix for mobile browser address bar appearing disappearing */
+  left:0;
+  right:0;
+  z-index:-1; /* needed to keep in the background */
+  background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p {
+  background-color:rgba(255,255,255,0.5);
+  padding:10px;
+}
+</style>
+</head>
+<body>
+
+  <p>
+  Background-image size fixed cover which WORKS on iOS and any another mobile device.
+  </p>
+
+  <p>
+  More info <a href="http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483" target="_blank">at stackoverflow.com</a>
+  </p>
+
+  <p>
+  Live demo: <a href="https://www.doklist.com/" target="_blank">at Doklist.com</a>
+  </p>
+
+</body>
+</html>
