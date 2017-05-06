@@ -2,7 +2,7 @@
 
 In iOS a fixed cover background is handled using the whole document height instead of using only the viewport's height. 
 
-This won't work properly:
+This will be stretched as big as the document's height, so the background image will displayed zoomed:
 
 ```
 body {
