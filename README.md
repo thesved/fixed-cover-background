@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+## Making fixed cover sized background images work on mobile devices
 
-You can use the [editor on GitHub](https://github.com/sztojka/fixed-cover-background/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In iOS a fixed cover background is handled using the whole document height instead of using only the viewport's height. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This won't work properly:
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+body {
+      background: url(https://www.w3schools.com/css/trolltunga.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+However if you make the element itself fixed, this code works like a charm, by using only one CSS rule:
 
-### Jekyll Themes
+```
+body:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url(https://www.w3schools.com/css/trolltunga.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sztojka/fixed-cover-background/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+More info: [Background-image size cover not working on IOS](http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Live demo of the solution: [Doklist.com](https://www.doklist.com)
