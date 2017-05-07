@@ -2,6 +2,9 @@
 
 In iOS a fixed cover background is handled using the whole document height instead of using only the viewport's height. 
 
+Example of an error: [erroneous working](https://sztojka.github.io/fixed-cover-background/index-wrong.html)
+Solution: [fixed with CSS](https://sztojka.github.io/fixed-cover-background/)
+
 This will be stretched as big as the document's height, so the background image will displayed zoomed:
 
 ```
