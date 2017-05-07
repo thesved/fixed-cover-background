@@ -1,44 +1,59 @@
 <html>
 <head>
-<style>
-body {
-  /* cover sized and fixed backgrounds are handled wrongly in iOS */
-  background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-p {
-  background-color:rgba(255,255,255,0.9);
-  margin: 10px 20px;
-  padding:10px;
-}
-p.long {
-  height:2000px;
-}
-</style>
-</head>
+  <style>
+    body {
+      /* cover sized and fixed backgrounds are handled wrongly in iOS */
+      background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    p, pre {
+      background-color:rgba(255,255,255,0.9);
+      margin: 10px 20px;
+      padding:10px;
+    }
+    p.long {
+      height:2000px;
+    }
+  </style>
+  </head>
 <body>
 
   <p>
-  Background-image size fixed cover which doesn't work properly on iOS, since it uses the height of the document and not the viewport.
+    Background-image size fixed cover which doesn't work properly on iOS, since it uses the height of the document and not the viewport.
+  </p>
+  
+  <pre>
+    body {
+      /* cover sized and fixed backgrounds are handled wrongly in iOS */
+      background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </pre>
+  
+  <p>
+    <a href="https://sztojka.github.io/fixed-cover-background/">Click here</a> for the solution.
   </p>
   
   <p>
-  <a href="https://sztojka.github.io/fixed-cover-background/">Click here</a> for the solution.
+    <a href="https://github.com/sztojka/fixed-cover-background" target="_blank">See Github repo</a>
   </p>
 
   <p>
-  More info <a href="http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483" target="_blank">at stackoverflow.com</a>
+    More info <a href="http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483" target="_blank">at stackoverflow.com</a>
   </p>
 
   <p>
-  Live demo: <a href="https://www.doklist.com/" target="_blank">at Doklist.com</a>
+    Live demo: <a href="https://www.doklist.com/" target="_blank">at Doklist.com</a>
   </p>
   
   <p class="long">
-  A very long paragraph to test how well this solution works.
+    A very long paragraph to test how well this solution works.
   </p>
 
 </body>
