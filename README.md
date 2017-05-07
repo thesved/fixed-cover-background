@@ -3,7 +3,10 @@
 In iOS a fixed cover background is handled using the whole document height instead of using only the viewport's height. 
 
 Example of an error: [erroneous working](https://sztojka.github.io/fixed-cover-background/index-wrong.html)
+
 Solution: [fixed with CSS](https://sztojka.github.io/fixed-cover-background/)
+
+### Error ###
 
 This will be stretched as big as the document's height, so the background image will displayed zoomed:
 
@@ -16,6 +19,8 @@ body {
       background-size: cover;
 }
 ```
+
+### Fix ###
 
 However if you make the element itself fixed, this code works like a charm, by using only one CSS rule:
 
@@ -36,6 +41,7 @@ body:after{
 }
 ```
 
+### Further info ###
 
 More info: [Background-image size cover not working on IOS](http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483)
 
