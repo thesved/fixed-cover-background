@@ -1,51 +1,71 @@
 <html>
 <head>
-<title>Background-image size fixed cover which WORKS on iOS and any another mobile device.</title>
-<style>
-body:after{
-  content:"";
-  position:fixed; /* stretch a fixed position to the whole screen */
-  top:0;
-  height:100vh; /* fix for mobile browser address bar appearing disappearing */
-  left:0;
-  right:0;
-  z-index:-1; /* needed to keep in the background */
-  background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-p {
-  background-color:rgba(255,255,255,0.9);
-  margin: 10px 20px;
-  padding:10px;
-}
-p.long {
-  height:2000px;
-}
-</style>
+  <title>Background-image size fixed cover which WORKS on iOS and any another mobile device.</title>
+  <style>
+    body:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    p, pre {
+      background-color:rgba(255,255,255,0.9);
+      margin: 10px 20px;
+      padding:10px;
+    }
+    p.long {
+      height:2000px;
+    }
+  </style>
 </head>
 <body>
+  <p>
+    Background-image size fixed cover which WORKS on iOS and any another mobile device.
+  </p>
+  
+  <pre>
+    body:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url(https://newevolutiondesigns.com/images/freebies/nature-hd-background-9.jpg) center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </pre>
+  
+  <p>
+    <a href="https://sztojka.github.io/fixed-cover-background/index-wrong.html">Click here</a> for seeing the normal behavior, which doesn't work properly.
+  </p>
 
   <p>
-  Background-image size fixed cover which WORKS on iOS and any another mobile device.
+    <a href="https://github.com/sztojka/fixed-cover-background" target="_blank">See Github repo</a>
   </p>
   
   <p>
-  <a href="https://sztojka.github.io/fixed-cover-background/index-wrong.html">Click here</a> for seeing the normal behavior, which doesn't work properly.
+    More info <a href="http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483" target="_blank">at stackoverflow.com</a>
   </p>
 
   <p>
-  More info <a href="http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483" target="_blank">at stackoverflow.com</a>
-  </p>
-
-  <p>
-  Live demo: <a href="https://www.doklist.com/" target="_blank">at Doklist.com</a>
+    Live demo: <a href="https://www.doklist.com/" target="_blank">at Doklist.com</a>
   </p>
   
   <p class="long">
-  A very long paragraph to test how well this solution works.
+    A very long paragraph to test how well this solution works.
   </p>
 
 </body>
