@@ -43,6 +43,6 @@ body:after{
 
 ### Further info ###
 
-More info: [Background-image size cover not working on IOS](http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483)
+More info: [Stackoverflow: Background-image size cover not working on IOS](http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483)
 
 Live demo of the solution: [Doklist.com](https://www.doklist.com)
