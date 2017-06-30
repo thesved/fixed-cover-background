@@ -46,4 +46,4 @@ body:after{
 
 More info: [Stackoverflow: Background-image size cover not working on IOS](http://stackoverflow.com/questions/24154666/background-image-size-cover-not-working-on-ios/43058483#43058483)
 
-Live demo of the solution: [Doklist.com](https://www.doklist.com)
+Live demo of the solution: [Doklist.com](https://www.doklist.com), [Doklist.com.br](https://www.doklist.com.br)
